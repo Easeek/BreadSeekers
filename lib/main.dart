@@ -1,3 +1,5 @@
+import 'package:bread_seekers/common/icon_path.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -104,25 +106,30 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: ImageData(path: IconPath.navHomeOff),
+            activeIcon: ImageData(path: IconPath.navHome),
             label: '홈',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: ImageData(path: IconPath.navSearchOff),
+            activeIcon: ImageData(path: IconPath.navSearch),
             label: '검색',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            icon: ImageData(path: IconPath.navAllOff),
+            activeIcon: ImageData(path: IconPath.navAll),
             label: '전체',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
+            icon: ImageData(path: IconPath.navZzimOff),
+            activeIcon: ImageData(path: IconPath.navZzim),
             label: '찜',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: ImageData(path: IconPath.navMyPageOff),
+            activeIcon: ImageData(path: IconPath.navMyPage),
             label: '마이페이지',
           ),
         ],
